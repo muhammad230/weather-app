@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <!---------------  CSS  --------------------->
     <link rel="stylesheet" href="style.css">
+    <title>Source Code Of Weather Web App</title>
+    <!---------------  IONICONS  --------------------->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
-    <div class="weather-container">
-        <h1>Weather App</h1>
-        <div class="weather">
-            <input type="text" id="city" placeholder="Enter city">
-            <button onclick="getWeather()">Get Weather</button>
-            <div class="weather-info">
-                <h2 id="city-name"></h2>
-                <p id="temperature"></p>
-                <p id="description"></p>
-            </div>
-        </div>
+    <div class="container">
+      <div class="search_box"> 
+        <input type="text" placeholder="Enter a city name" id="city" value="VARANASI" autocomplete="off"/>
+        <button id="search"><ion-icon class="icon" name="search"></ion-icon></button>
+      </div>
+      <div id="show"></div>
     </div>
-
-    <script src="app.js"></script>
-</body>
+   <!---------------  SCRIPT  --------------------->
+   <script src="script.js"></script>  
+</body>   
 </html>
